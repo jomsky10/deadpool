@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <head>
+        <title>Deadpool</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="./js/type.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <link rel="stylesheet" href="style.min.css">
+    </head>
+    <body>
+
+        <div class="wrapper">
+        <div class="deadpool"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+
+        <div id="particles-js"></div>
+
+
+            <div class="main">
+
+             <nav>
+                 <img class="logo" src="./src/main-logo.png">
+                        <div class="menu">
+                            <!-- <li>HOME</li>
+                            <li>PLAYLIST</li>
+                            <li>ALBUM</li>
+                            <li>TOP CHARTS</li> -->
+                        </div>
+                 <div>
+                     <input type="text" placeholder="Search">
+                </div>
+             </nav>
+
+             <div class="heading">
+                <h4>WADE WILSON</h4>
+                <h1></h1>
+                <p>With great power comes no responsibility</p>
+             </div> 
+          
+
+
+            <div class="sns-container">
+                <div class="icon">
+                  <img src="./src/fb.png" > <a href="https://web.facebook.com/jomskiiiii ">  <div>Facebook</div></a>
+                </div>
+                <div class="icon">
+                    <img src="./src/int.png"><a href="https://Instagram.com/jomskiiiii "><div>Instagram</div></a>
+                </div>
+                <div class="icon">
+                    <img src="./src/git.png"><a href="https://github.com/jomsky10"><div>Github</div></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+
+<script type="text/javascript" src="./js/script.js"></script>
+
+<script type="text/javascript">
+
+        new TypeIt('h1', {
+            speed: 60,
+            startDelay: 200,
+            cursor: false
+        })
+        .type('BATMAN!')
+        .pause(1800).empty().type('SUPERMAN?')
+        .pause(2000).empty().type('JOHN WICK...')
+        .pause(2100).empty().type('NO!')
+        .pause(2100).empty().type("I'M").options({speed: 50})
+        .pause(800).empty().type('DEDPOOL')
+        .pause(1800).type('.WTF')
+        .pause(2000).delete(9).options({speed: 20}).type('ADPOOL')
+        .pause(1000).type('*').pause(4000).delete(1)
+       ;
+
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+var movementStrength = 25;
+var height = movementStrength / $(window).height();
+var width = movementStrength / $(window).width();
+$(".wrapper, .right, .left, .deadpool").mousemove(function(e){
+          var pageX = e.pageX - ($(window).width() / 2);
+          var pageY = e.pageY - ($(window).height() / 2);
+          var newvalueX = width * pageX * -1 - 25;
+          var newvalueY = height * pageY * -1 - 50;
+          $('.wrapper, .right, .left , .deadpool').css("background-position", newvalueX+"px     "+newvalueY+"px");
+});
+});
+</script>
+
+    </body>
+</html>
