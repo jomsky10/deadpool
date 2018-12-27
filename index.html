@@ -3,9 +3,8 @@
         <title>Deadpool</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="./js/type.min.js"></script>
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <link rel="stylesheet" href="style.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
 
@@ -66,33 +65,29 @@
             startDelay: 200,
             cursor: false
         })
-        .type('BATMAN!')
-        .pause(1800).empty().type('SUPERMAN?')
-        .pause(2000).empty().type('JOHN WICK...')
-        .pause(2100).empty().type('NO!')
-        .pause(2100).empty().type("I'M").options({speed: 50})
-        .pause(800).empty().type('DEDPOOL')
-        .pause(1800).type('.WTF')
-        .pause(2000).delete(9).options({speed: 20}).type('ADPOOL')
-        .pause(1000).type('*').pause(4000).delete(1)
+        .type('MATABANG!')
+        .pause(1800).empty().type('TOMBOY?')
+        .pause(2000).empty().type('NA...')
+        .pause(2100).empty().type('NAKA!')
+        .pause(2100).empty().type("...").options({speed: 50})
+        .pause(800).empty().type('MIOOOOOOOOO')
+ 
        ;
-
 </script>
 
-
 <script type="text/javascript">
-$(document).ready(function() {
-var movementStrength = 25;
-var height = movementStrength / $(window).height();
-var width = movementStrength / $(window).width();
-$(".wrapper, .right, .left, .deadpool").mousemove(function(e){
-          var pageX = e.pageX - ($(window).width() / 2);
-          var pageY = e.pageY - ($(window).height() / 2);
-          var newvalueX = width * pageX * -1 - 25;
-          var newvalueY = height * pageY * -1 - 50;
-          $('.wrapper, .right, .left , .deadpool').css("background-position", newvalueX+"px     "+newvalueY+"px");
-});
-});
+    $(document).ready(function() {
+    var movementStrength = 25;
+    var height = movementStrength / $(window).height();
+    var width = movementStrength / $(window).width();
+    $(".wrapper, .right, .left, .deadpool").mousemove(function(e){
+            var pageX = e.pageX - ($(window).width() / 2);
+            var pageY = e.pageY - ($(window).height() / 2);
+            var newvalueX = width * pageX * -1 - 25;
+            var newvalueY = height * pageY * -1 - 50;
+            $('.wrapper, .right, .left , .deadpool').css("background-position", newvalueX+"px     "+newvalueY+"px");
+    });
+    });
 </script>
 
     </body>
